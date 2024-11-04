@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+        <EditText
+            android:id="@+id/Nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nom"
+            android:layout_alignParentTop="true" />
+
+        <EditText
+            android:id="@+id/Cognom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cognom"
+            android:layout_below="@id/Nom"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/Edat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Edat"
+            android:layout_below="@id/Cognom"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/Usuari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuari"
+            android:layout_below="@id/Edat"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:layout_below="@id/Usuari"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:layout_below="@id/Password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+
+    </RelativeLayout>
